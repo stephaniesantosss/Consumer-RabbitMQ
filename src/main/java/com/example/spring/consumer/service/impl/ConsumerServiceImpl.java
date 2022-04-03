@@ -7,8 +7,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 
-    @Override
+    @Override //throws Exception caso eu queira testar a dlq
     public void action(Message message) {
+        //throw new Exception("Erro");
         System.out.println(message.getText());
     }
 }
