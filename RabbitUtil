@@ -1,0 +1,4 @@
+ ##### Para habilitar plugin para mover as mensagens via interface do RabbitMQ ####
+
+ docker exec -it rabbitmq bash
+ rabbitmq-plugins enable rabbitmq_shovel rabbitmq_shovel_management
